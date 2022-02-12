@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Common service.
 * @module api/CommonApi
-* @version 0.0.1-SNAPSHOT
+* @version 1.0.0-SNAPSHOT
 */
 var CommonApi = /*#__PURE__*/function () {
   /**

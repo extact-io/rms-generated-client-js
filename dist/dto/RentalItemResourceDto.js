@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The RentalItemResourceDto model module.
  * @module dto/RentalItemResourceDto
- * @version 0.0.1-SNAPSHOT
+ * @version 1.0.0-SNAPSHOT
  */
 var RentalItemResourceDto = /*#__PURE__*/function () {
   /**

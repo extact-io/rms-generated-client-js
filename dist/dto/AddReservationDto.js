@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddReservationDto model module.
  * @module dto/AddReservationDto
- * @version 0.0.1-SNAPSHOT
+ * @version 1.0.0-SNAPSHOT
  */
 var AddReservationDto = /*#__PURE__*/function () {
   /**

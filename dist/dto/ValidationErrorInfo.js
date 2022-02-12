@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ValidationErrorInfo model module.
  * @module dto/ValidationErrorInfo
- * @version 0.0.1-SNAPSHOT
+ * @version 1.0.0-SNAPSHOT
  */
 var ValidationErrorInfo = /*#__PURE__*/function () {
   /**

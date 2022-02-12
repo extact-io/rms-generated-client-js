@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The UserAccountResourceDto model module.
  * @module dto/UserAccountResourceDto
- * @version 0.0.1-SNAPSHOT
+ * @version 1.0.0-SNAPSHOT
  */
 var UserAccountResourceDto = /*#__PURE__*/function () {
   /**

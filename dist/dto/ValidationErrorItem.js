@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ValidationErrorItem model module.
  * @module dto/ValidationErrorItem
- * @version 0.0.1-SNAPSHOT
+ * @version 1.0.0-SNAPSHOT
  */
 var ValidationErrorItem = /*#__PURE__*/function () {
   /**
