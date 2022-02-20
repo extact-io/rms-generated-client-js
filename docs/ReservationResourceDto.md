@@ -1,4 +1,4 @@
-# RmsGeneratedClientJs.ReservationResourceDto
+# @ExtactIoRmsGeneratedClientJs.ReservationResourceDto
 
 ## Properties
 

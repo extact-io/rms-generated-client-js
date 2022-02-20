@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddRentalItemDto model module.
  * @module dto/AddRentalItemDto
- * @version 1.0.0-SNAPSHOT
+ * @version 1.0.0
  */
 var AddRentalItemDto = /*#__PURE__*/function () {
   /**

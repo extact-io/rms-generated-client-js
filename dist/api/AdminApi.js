@@ -32,7 +32,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Admin service.
 * @module api/AdminApi
-* @version 1.0.0-SNAPSHOT
+* @version 1.0.0
 */
 var AdminApi = /*#__PURE__*/function () {
   /**

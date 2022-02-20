@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ReservationResourceDto model module.
  * @module dto/ReservationResourceDto
- * @version 1.0.0-SNAPSHOT
+ * @version 1.0.0
  */
 var ReservationResourceDto = /*#__PURE__*/function () {
   /**

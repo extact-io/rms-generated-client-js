@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Member service.
 * @module api/MemberApi
-* @version 1.0.0-SNAPSHOT
+* @version 1.0.0
 */
 var MemberApi = /*#__PURE__*/function () {
   /**

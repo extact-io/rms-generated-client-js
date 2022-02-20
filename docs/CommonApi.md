@@ -1,4 +1,4 @@
-# RmsGeneratedClientJs.CommonApi
+# @ExtactIoRmsGeneratedClientJs.CommonApi
 
 All URIs are relative to *http://localhost*
 
@@ -20,13 +20,13 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.CommonApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.CommonApi();
 apiInstance.getOwnUserProfile().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -64,15 +64,15 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.CommonApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.CommonApi();
 let opts = {
-  'userAccountResourceDto': new RmsGeneratedClientJs.UserAccountResourceDto() // UserAccountResourceDto | 
+  'userAccountResourceDto': new @ExtactIoRmsGeneratedClientJs.UserAccountResourceDto() // UserAccountResourceDto | 
 };
 apiInstance.updateUserProfile(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

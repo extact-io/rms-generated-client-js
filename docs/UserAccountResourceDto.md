@@ -1,4 +1,4 @@
-# RmsGeneratedClientJs.UserAccountResourceDto
+# @ExtactIoRmsGeneratedClientJs.UserAccountResourceDto
 
 ## Properties
 

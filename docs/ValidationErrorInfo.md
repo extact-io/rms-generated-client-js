@@ -1,4 +1,4 @@
-# RmsGeneratedClientJs.ValidationErrorInfo
+# @ExtactIoRmsGeneratedClientJs.ValidationErrorInfo
 
 ## Properties
 

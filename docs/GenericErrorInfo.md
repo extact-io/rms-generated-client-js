@@ -1,4 +1,4 @@
-# RmsGeneratedClientJs.GenericErrorInfo
+# @ExtactIoRmsGeneratedClientJs.GenericErrorInfo
 
 ## Properties
 

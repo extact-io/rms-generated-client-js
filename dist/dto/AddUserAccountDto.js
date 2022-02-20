@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddUserAccountDto model module.
  * @module dto/AddUserAccountDto
- * @version 1.0.0-SNAPSHOT
+ * @version 1.0.0
  */
 var AddUserAccountDto = /*#__PURE__*/function () {
   /**

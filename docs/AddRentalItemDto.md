@@ -1,4 +1,4 @@
-# RmsGeneratedClientJs.AddRentalItemDto
+# @ExtactIoRmsGeneratedClientJs.AddRentalItemDto
 
 ## Properties
 

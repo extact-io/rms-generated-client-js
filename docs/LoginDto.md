@@ -1,4 +1,4 @@
-# RmsGeneratedClientJs.LoginDto
+# @ExtactIoRmsGeneratedClientJs.LoginDto
 
 ## Properties
 

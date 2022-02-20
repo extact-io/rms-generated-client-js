@@ -1,4 +1,4 @@
-# RmsGeneratedClientJs.AdminApi
+# @ExtactIoRmsGeneratedClientJs.AdminApi
 
 All URIs are relative to *http://localhost*
 
@@ -29,15 +29,15 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.AdminApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.AdminApi();
 let opts = {
-  'addRentalItemDto': new RmsGeneratedClientJs.AddRentalItemDto() // AddRentalItemDto | 
+  'addRentalItemDto': new @ExtactIoRmsGeneratedClientJs.AddRentalItemDto() // AddRentalItemDto | 
 };
 apiInstance.addRentalItem(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -79,15 +79,15 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.AdminApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.AdminApi();
 let opts = {
-  'addUserAccountDto': new RmsGeneratedClientJs.AddUserAccountDto() // AddUserAccountDto | 
+  'addUserAccountDto': new @ExtactIoRmsGeneratedClientJs.AddUserAccountDto() // AddUserAccountDto | 
 };
 apiInstance.addUserAccount(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -129,13 +129,13 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.AdminApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.AdminApi();
 let rentalItemId = 56; // Number | レンタル品ID
 apiInstance.deleteRentalItem(rentalItemId).then(() => {
   console.log('API called successfully.');
@@ -177,13 +177,13 @@ null (empty response body)
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.AdminApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.AdminApi();
 let reservationId = 56; // Number | 予約ID
 apiInstance.deleteReservation(reservationId).then(() => {
   console.log('API called successfully.');
@@ -225,13 +225,13 @@ null (empty response body)
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.AdminApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.AdminApi();
 let userAccountId = 56; // Number | ユーザID
 apiInstance.deleteUserAccount(userAccountId).then(() => {
   console.log('API called successfully.');
@@ -273,13 +273,13 @@ null (empty response body)
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.AdminApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.AdminApi();
 apiInstance.getAllRentalItems().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -317,13 +317,13 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.AdminApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.AdminApi();
 apiInstance.getAllReservations().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -361,13 +361,13 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.AdminApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.AdminApi();
 apiInstance.getAllUserAccounts().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -405,15 +405,15 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.AdminApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.AdminApi();
 let opts = {
-  'rentalItemResourceDto': new RmsGeneratedClientJs.RentalItemResourceDto() // RentalItemResourceDto | 
+  'rentalItemResourceDto': new @ExtactIoRmsGeneratedClientJs.RentalItemResourceDto() // RentalItemResourceDto | 
 };
 apiInstance.updateRentalItem(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -455,15 +455,15 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.AdminApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.AdminApi();
 let opts = {
-  'reservationResourceDto': new RmsGeneratedClientJs.ReservationResourceDto() // ReservationResourceDto | 
+  'reservationResourceDto': new @ExtactIoRmsGeneratedClientJs.ReservationResourceDto() // ReservationResourceDto | 
 };
 apiInstance.updateReservation(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -505,15 +505,15 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.AdminApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.AdminApi();
 let opts = {
-  'userAccountResourceDto': new RmsGeneratedClientJs.UserAccountResourceDto() // UserAccountResourceDto | 
+  'userAccountResourceDto': new @ExtactIoRmsGeneratedClientJs.UserAccountResourceDto() // UserAccountResourceDto | 
 };
 apiInstance.updateUserAccount(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

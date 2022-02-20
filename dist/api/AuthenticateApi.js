@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Authenticate service.
 * @module api/AuthenticateApi
-* @version 1.0.0-SNAPSHOT
+* @version 1.0.0
 */
 var AuthenticateApi = /*#__PURE__*/function () {
   /**

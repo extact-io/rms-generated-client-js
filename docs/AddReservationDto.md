@@ -1,4 +1,4 @@
-# RmsGeneratedClientJs.AddReservationDto
+# @ExtactIoRmsGeneratedClientJs.AddReservationDto
 
 ## Properties
 

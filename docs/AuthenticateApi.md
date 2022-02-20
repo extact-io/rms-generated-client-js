@@ -1,4 +1,4 @@
-# RmsGeneratedClientJs.AuthenticateApi
+# @ExtactIoRmsGeneratedClientJs.AuthenticateApi
 
 All URIs are relative to *http://localhost*
 
@@ -20,11 +20,11 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
 
-let apiInstance = new RmsGeneratedClientJs.AuthenticateApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.AuthenticateApi();
 let opts = {
-  'loginDto': new RmsGeneratedClientJs.LoginDto() // LoginDto | 
+  'loginDto': new @ExtactIoRmsGeneratedClientJs.LoginDto() // LoginDto | 
 };
 apiInstance.authenticate(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -66,9 +66,9 @@ No authorization required
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
 
-let apiInstance = new RmsGeneratedClientJs.AuthenticateApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.AuthenticateApi();
 let loginId = "loginId_example"; // String | ログインId
 let password = "password_example"; // String | パスワード
 apiInstance.authenticateForTest(loginId, password).then((data) => {

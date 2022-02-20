@@ -1,4 +1,4 @@
-# RmsGeneratedClientJs.MemberApi
+# @ExtactIoRmsGeneratedClientJs.MemberApi
 
 All URIs are relative to *http://localhost*
 
@@ -27,15 +27,15 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.MemberApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.MemberApi();
 let opts = {
-  'addReservationDto': new RmsGeneratedClientJs.AddReservationDto() // AddReservationDto | 
+  'addReservationDto': new @ExtactIoRmsGeneratedClientJs.AddReservationDto() // AddReservationDto | 
 };
 apiInstance.addReservation(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -77,13 +77,13 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.MemberApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.MemberApi();
 let rentalItemId = 56; // Number | レンタル品ID
 let from = null; // String | 利用開始日時
 let to = null; // String | 利用開始日時
@@ -129,13 +129,13 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.MemberApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.MemberApi();
 let reservationId = 56; // Number | 予約ID
 apiInstance.cancelReservation(reservationId).then(() => {
   console.log('API called successfully.');
@@ -177,13 +177,13 @@ null (empty response body)
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.MemberApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.MemberApi();
 let from = null; // String | 利用開始日時
 let to = null; // String | 利用開始日時
 apiInstance.findCanRentedItemAtTerm(from, to).then((data) => {
@@ -227,13 +227,13 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.MemberApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.MemberApi();
 let itemId = 56; // Number | レンタル品ID
 let startDate = 20201230; // String | 利用開始日
 apiInstance.findReservationByRentalItemAndStartDate(itemId, startDate).then((data) => {
@@ -277,13 +277,13 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.MemberApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.MemberApi();
 let rentalItemId = 56; // Number | レンタル品ID
 apiInstance.findReservationByRentalItemId(rentalItemId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -325,13 +325,13 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.MemberApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.MemberApi();
 let reserverId = 56; // Number | ユーザID
 apiInstance.findReservationByReserverId(reserverId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -373,13 +373,13 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.MemberApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.MemberApi();
 apiInstance.getAllRentalItems().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -417,13 +417,13 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import RmsGeneratedClientJs from 'rms-generated-client-js';
-let defaultClient = RmsGeneratedClientJs.ApiClient.instance;
+import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
+let defaultClient = @ExtactIoRmsGeneratedClientJs.ApiClient.instance;
 // Configure Bearer (JWT) access token for authorization: RmsJwtAuth
 let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new RmsGeneratedClientJs.MemberApi();
+let apiInstance = new @ExtactIoRmsGeneratedClientJs.MemberApi();
 apiInstance.getOwnReservations().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {

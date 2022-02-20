@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The LoginDto model module.
  * @module dto/LoginDto
- * @version 1.0.0-SNAPSHOT
+ * @version 1.0.0
  */
 var LoginDto = /*#__PURE__*/function () {
   /**
