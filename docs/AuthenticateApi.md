@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**authenticate**](AuthenticateApi.md#authenticate) | **POST** /rms/login | ユーザ認証を行う
-[**authenticateForTest**](AuthenticateApi.md#authenticateForTest) | **GET** /rms/login | ユーザ認証を行う（curlのテスト用）
+[**authenticate**](AuthenticateApi.md#authenticate) | **POST** /auth/login | ユーザ認証を行う
+[**authenticateForTest**](AuthenticateApi.md#authenticateForTest) | **GET** /auth/login | ユーザ認証を行う（curlのテスト用）
 
 
 
@@ -24,7 +24,7 @@ import @ExtactIoRmsGeneratedClientJs from '@extact-io/rms-generated-client-js';
 
 let apiInstance = new @ExtactIoRmsGeneratedClientJs.AuthenticateApi();
 let opts = {
-  'loginDto': new @ExtactIoRmsGeneratedClientJs.LoginDto() // LoginDto | 
+  'loginEventDto': new @ExtactIoRmsGeneratedClientJs.LoginEventDto() // LoginEventDto | 
 };
 apiInstance.authenticate(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -39,7 +39,7 @@ apiInstance.authenticate(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **loginDto** | [**LoginDto**](LoginDto.md)|  | [optional] 
+ **loginEventDto** | [**LoginEventDto**](LoginEventDto.md)|  | [optional] 
 
 ### Return type
 

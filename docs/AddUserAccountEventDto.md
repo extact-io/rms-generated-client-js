@@ -1,4 +1,4 @@
-# @ExtactIoRmsGeneratedClientJs.AddUserAccountDto
+# @ExtactIoRmsGeneratedClientJs.AddUserAccountEventDto
 
 ## Properties
 

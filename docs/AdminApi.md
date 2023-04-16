@@ -4,17 +4,17 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addRentalItem**](AdminApi.md#addRentalItem) | **POST** /rms/items | レンタル品を登録する
-[**addUserAccount**](AdminApi.md#addUserAccount) | **POST** /rms/users | ユーザを登録する
-[**deleteRentalItem**](AdminApi.md#deleteRentalItem) | **DELETE** /rms/items/{rentalItemId} | レンタル品を削除する
-[**deleteReservation**](AdminApi.md#deleteReservation) | **DELETE** /rms/reservations/{reservationId} | 予約を削除する
-[**deleteUserAccount**](AdminApi.md#deleteUserAccount) | **DELETE** /rms/users/{userAccountId} | ユーザを削除する
-[**getAllRentalItems**](AdminApi.md#getAllRentalItems) | **GET** /rms/items | レンタル品の全件を取得する
-[**getAllReservations**](AdminApi.md#getAllReservations) | **GET** /rms/reservations | 予約の全件を取得する
-[**getAllUserAccounts**](AdminApi.md#getAllUserAccounts) | **GET** /rms/users | ユーザの全件を取得する
-[**updateRentalItem**](AdminApi.md#updateRentalItem) | **PUT** /rms/items | レンタル品を更新する
-[**updateReservation**](AdminApi.md#updateReservation) | **PUT** /rms/reservations | 予約を更新する
-[**updateUserAccount**](AdminApi.md#updateUserAccount) | **PUT** /rms/users | ユーザを更新する
+[**addRentalItem**](AdminApi.md#addRentalItem) | **POST** /api/rms/items | レンタル品を登録する
+[**addUserAccount**](AdminApi.md#addUserAccount) | **POST** /api/rms/users | ユーザを登録する
+[**deleteRentalItem**](AdminApi.md#deleteRentalItem) | **DELETE** /api/rms/items/{itemId} | レンタル品を削除する
+[**deleteReservation**](AdminApi.md#deleteReservation) | **DELETE** /api/rms/reservations/{reservationId} | 予約を削除する
+[**deleteUserAccount**](AdminApi.md#deleteUserAccount) | **DELETE** /api/rms/users/{userAccountId} | ユーザを削除する
+[**getAllRentalItems**](AdminApi.md#getAllRentalItems) | **GET** /api/rms/items | レンタル品の全件を取得する
+[**getAllReservations**](AdminApi.md#getAllReservations) | **GET** /api/rms/reservations | 予約の全件を取得する
+[**getAllUserAccounts**](AdminApi.md#getAllUserAccounts) | **GET** /api/rms/users | ユーザの全件を取得する
+[**updateRentalItem**](AdminApi.md#updateRentalItem) | **PUT** /api/rms/items | レンタル品を更新する
+[**updateReservation**](AdminApi.md#updateReservation) | **PUT** /api/rms/reservations | 予約を更新する
+[**updateUserAccount**](AdminApi.md#updateUserAccount) | **PUT** /api/rms/users | ユーザを更新する
 
 
 
@@ -37,7 +37,7 @@ RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new @ExtactIoRmsGeneratedClientJs.AdminApi();
 let opts = {
-  'addRentalItemDto': new @ExtactIoRmsGeneratedClientJs.AddRentalItemDto() // AddRentalItemDto | 
+  'addRentalItemEventDto': new @ExtactIoRmsGeneratedClientJs.AddRentalItemEventDto() // AddRentalItemEventDto | 
 };
 apiInstance.addRentalItem(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -52,7 +52,7 @@ apiInstance.addRentalItem(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **addRentalItemDto** | [**AddRentalItemDto**](AddRentalItemDto.md)|  | [optional] 
+ **addRentalItemEventDto** | [**AddRentalItemEventDto**](AddRentalItemEventDto.md)|  | [optional] 
 
 ### Return type
 
@@ -87,7 +87,7 @@ RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new @ExtactIoRmsGeneratedClientJs.AdminApi();
 let opts = {
-  'addUserAccountDto': new @ExtactIoRmsGeneratedClientJs.AddUserAccountDto() // AddUserAccountDto | 
+  'addUserAccountEventDto': new @ExtactIoRmsGeneratedClientJs.AddUserAccountEventDto() // AddUserAccountEventDto | 
 };
 apiInstance.addUserAccount(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -102,7 +102,7 @@ apiInstance.addUserAccount(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **addUserAccountDto** | [**AddUserAccountDto**](AddUserAccountDto.md)|  | [optional] 
+ **addUserAccountEventDto** | [**AddUserAccountEventDto**](AddUserAccountEventDto.md)|  | [optional] 
 
 ### Return type
 
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 
 ## deleteRentalItem
 
-> deleteRentalItem(rentalItemId)
+> deleteRentalItem(itemId)
 
 レンタル品を削除する
 
@@ -136,8 +136,8 @@ let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new @ExtactIoRmsGeneratedClientJs.AdminApi();
-let rentalItemId = 56; // Number | レンタル品ID
-apiInstance.deleteRentalItem(rentalItemId).then(() => {
+let itemId = 56; // Number | レンタル品ID
+apiInstance.deleteRentalItem(itemId).then(() => {
   console.log('API called successfully.');
 }, (error) => {
   console.error(error);
@@ -150,7 +150,7 @@ apiInstance.deleteRentalItem(rentalItemId).then(() => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rentalItemId** | **Number**| レンタル品ID | 
+ **itemId** | **Number**| レンタル品ID | 
 
 ### Return type
 

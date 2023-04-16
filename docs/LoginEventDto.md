@@ -1,4 +1,4 @@
-# @ExtactIoRmsGeneratedClientJs.LoginDto
+# @ExtactIoRmsGeneratedClientJs.LoginEventDto
 
 ## Properties
 

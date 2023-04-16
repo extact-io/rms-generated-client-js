@@ -1,4 +1,4 @@
-# @ExtactIoRmsGeneratedClientJs.ValidationErrorItem
+# @ExtactIoRmsGeneratedClientJs.ValidationErrorItemImpl
 
 ## Properties
 

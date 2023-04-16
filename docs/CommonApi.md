@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getOwnUserProfile**](CommonApi.md#getOwnUserProfile) | **GET** /rms/users/own | 自分のプロファイル情報を取得する
-[**updateUserProfile**](CommonApi.md#updateUserProfile) | **PUT** /rms/users/own | 自分のプロファイル情報を更新する
+[**getOwnUserProfile**](CommonApi.md#getOwnUserProfile) | **GET** /api/rms/users/own | 自分のプロファイル情報を取得する
+[**updateUserProfile**](CommonApi.md#updateUserProfile) | **PUT** /api/rms/users/own | 自分のプロファイル情報を更新する
 
 
 

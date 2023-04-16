@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addReservation**](MemberApi.md#addReservation) | **POST** /rms/reservations | レンタル品を予約する
-[**canRentedItemAtTerm**](MemberApi.md#canRentedItemAtTerm) | **GET** /rms/items/{rentalItemId}/rentable | レンタル品が該当期間に予約可能かを返す
-[**cancelReservation**](MemberApi.md#cancelReservation) | **DELETE** /rms/reservations/own/{reservationId} | 予約をキャンセルする
-[**findCanRentedItemAtTerm**](MemberApi.md#findCanRentedItemAtTerm) | **GET** /rms/items/rentable | 該当期間に予約可能なレンタル品を検索する
-[**findReservationByRentalItemAndStartDate**](MemberApi.md#findReservationByRentalItemAndStartDate) | **GET** /rms/reservations/item/{itemId}/startdate/{startDate} | 指定されたレンタル品と利用開始日で予約を検索する
-[**findReservationByRentalItemId**](MemberApi.md#findReservationByRentalItemId) | **GET** /rms/reservations/item/{rentalItemId} | 指定されたレンタル品に対する予約を検索する
-[**findReservationByReserverId**](MemberApi.md#findReservationByReserverId) | **GET** /rms/reservations/reserver/{reserverId} | 指定されたユーザが予約者の予約を検索する
-[**getAllRentalItems**](MemberApi.md#getAllRentalItems) | **GET** /rms/items | レンタル品の全件を取得する
-[**getOwnReservations**](MemberApi.md#getOwnReservations) | **GET** /rms/reservations/own | 自分の予約一覧を取得する
+[**addReservation**](MemberApi.md#addReservation) | **POST** /api/rms/reservations | レンタル品を予約する
+[**canRentedItemAtTerm**](MemberApi.md#canRentedItemAtTerm) | **GET** /api/rms/items/{itemId}/rentable | レンタル品が該当期間に予約可能かを返す
+[**cancelReservation**](MemberApi.md#cancelReservation) | **DELETE** /api/rms/reservations/own/{reservationId} | 予約をキャンセルする
+[**findCanRentedItemAtTerm**](MemberApi.md#findCanRentedItemAtTerm) | **GET** /api/rms/items/rentable | 該当期間に予約可能なレンタル品を検索する
+[**findReservationByRentalItemAndStartDate**](MemberApi.md#findReservationByRentalItemAndStartDate) | **GET** /api/rms/reservations/item/{itemId}/startdate/{startDate} | 指定されたレンタル品と利用開始日で予約を検索する
+[**findReservationByRentalItemId**](MemberApi.md#findReservationByRentalItemId) | **GET** /api/rms/reservations/item/{itemId} | 指定されたレンタル品に対する予約を検索する
+[**findReservationByReserverId**](MemberApi.md#findReservationByReserverId) | **GET** /api/rms/reservations/reserver/{reserverId} | 指定されたユーザが予約者の予約を検索する
+[**getAllRentalItems**](MemberApi.md#getAllRentalItems) | **GET** /api/rms/items | レンタル品の全件を取得する
+[**getOwnReservations**](MemberApi.md#getOwnReservations) | **GET** /api/rms/reservations/own | 自分の予約一覧を取得する
 
 
 
@@ -35,7 +35,7 @@ RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new @ExtactIoRmsGeneratedClientJs.MemberApi();
 let opts = {
-  'addReservationDto': new @ExtactIoRmsGeneratedClientJs.AddReservationDto() // AddReservationDto | 
+  'addReservationEventDto': new @ExtactIoRmsGeneratedClientJs.AddReservationEventDto() // AddReservationEventDto | 
 };
 apiInstance.addReservation(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -50,7 +50,7 @@ apiInstance.addReservation(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **addReservationDto** | [**AddReservationDto**](AddReservationDto.md)|  | [optional] 
+ **addReservationEventDto** | [**AddReservationEventDto**](AddReservationEventDto.md)|  | [optional] 
 
 ### Return type
 
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ## canRentedItemAtTerm
 
-> Boolean canRentedItemAtTerm(rentalItemId, from, to)
+> Boolean canRentedItemAtTerm(itemId, from, to)
 
 レンタル品が該当期間に予約可能かを返す
 
@@ -84,10 +84,10 @@ let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new @ExtactIoRmsGeneratedClientJs.MemberApi();
-let rentalItemId = 56; // Number | レンタル品ID
+let itemId = 56; // Number | レンタル品ID
 let from = null; // String | 利用開始日時
 let to = null; // String | 利用開始日時
-apiInstance.canRentedItemAtTerm(rentalItemId, from, to).then((data) => {
+apiInstance.canRentedItemAtTerm(itemId, from, to).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -100,7 +100,7 @@ apiInstance.canRentedItemAtTerm(rentalItemId, from, to).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rentalItemId** | **Number**| レンタル品ID | 
+ **itemId** | **Number**| レンタル品ID | 
  **from** | [**String**](.md)| 利用開始日時 | 
  **to** | [**String**](.md)| 利用開始日時 | 
 
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 
 ## findReservationByRentalItemId
 
-> [ReservationResourceDto] findReservationByRentalItemId(rentalItemId)
+> [ReservationResourceDto] findReservationByRentalItemId(itemId)
 
 指定されたレンタル品に対する予約を検索する
 
@@ -284,8 +284,8 @@ let RmsJwtAuth = defaultClient.authentications['RmsJwtAuth'];
 RmsJwtAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new @ExtactIoRmsGeneratedClientJs.MemberApi();
-let rentalItemId = 56; // Number | レンタル品ID
-apiInstance.findReservationByRentalItemId(rentalItemId).then((data) => {
+let itemId = 56; // Number | レンタル品ID
+apiInstance.findReservationByRentalItemId(itemId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -298,7 +298,7 @@ apiInstance.findReservationByRentalItemId(rentalItemId).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rentalItemId** | **Number**| レンタル品ID | 
+ **itemId** | **Number**| レンタル品ID | 
 
 ### Return type
 

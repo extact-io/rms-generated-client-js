@@ -3,22 +3,22 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "AddRentalItemDto", {
+Object.defineProperty(exports, "AddRentalItemEventDto", {
   enumerable: true,
   get: function get() {
-    return _AddRentalItemDto["default"];
+    return _AddRentalItemEventDto["default"];
   }
 });
-Object.defineProperty(exports, "AddReservationDto", {
+Object.defineProperty(exports, "AddReservationEventDto", {
   enumerable: true,
   get: function get() {
-    return _AddReservationDto["default"];
+    return _AddReservationEventDto["default"];
   }
 });
-Object.defineProperty(exports, "AddUserAccountDto", {
+Object.defineProperty(exports, "AddUserAccountEventDto", {
   enumerable: true,
   get: function get() {
-    return _AddUserAccountDto["default"];
+    return _AddUserAccountEventDto["default"];
   }
 });
 Object.defineProperty(exports, "AdminApi", {
@@ -51,10 +51,10 @@ Object.defineProperty(exports, "GenericErrorInfo", {
     return _GenericErrorInfo["default"];
   }
 });
-Object.defineProperty(exports, "LoginDto", {
+Object.defineProperty(exports, "LoginEventDto", {
   enumerable: true,
   get: function get() {
-    return _LoginDto["default"];
+    return _LoginEventDto["default"];
   }
 });
 Object.defineProperty(exports, "MemberApi", {
@@ -87,49 +87,32 @@ Object.defineProperty(exports, "UserType", {
     return _UserType["default"];
   }
 });
-Object.defineProperty(exports, "ValidationErrorInfo", {
+Object.defineProperty(exports, "ValidationErrorInfoImpl", {
   enumerable: true,
   get: function get() {
-    return _ValidationErrorInfo["default"];
+    return _ValidationErrorInfoImpl["default"];
   }
 });
-Object.defineProperty(exports, "ValidationErrorItem", {
+Object.defineProperty(exports, "ValidationErrorItemImpl", {
   enumerable: true,
   get: function get() {
-    return _ValidationErrorItem["default"];
+    return _ValidationErrorItemImpl["default"];
   }
 });
-
 var _ApiClient = _interopRequireDefault(require("./ApiClient"));
-
-var _AddRentalItemDto = _interopRequireDefault(require("./dto/AddRentalItemDto"));
-
-var _AddReservationDto = _interopRequireDefault(require("./dto/AddReservationDto"));
-
-var _AddUserAccountDto = _interopRequireDefault(require("./dto/AddUserAccountDto"));
-
+var _AddRentalItemEventDto = _interopRequireDefault(require("./dto/AddRentalItemEventDto"));
+var _AddReservationEventDto = _interopRequireDefault(require("./dto/AddReservationEventDto"));
+var _AddUserAccountEventDto = _interopRequireDefault(require("./dto/AddUserAccountEventDto"));
 var _GenericErrorInfo = _interopRequireDefault(require("./dto/GenericErrorInfo"));
-
-var _LoginDto = _interopRequireDefault(require("./dto/LoginDto"));
-
+var _LoginEventDto = _interopRequireDefault(require("./dto/LoginEventDto"));
 var _RentalItemResourceDto = _interopRequireDefault(require("./dto/RentalItemResourceDto"));
-
 var _ReservationResourceDto = _interopRequireDefault(require("./dto/ReservationResourceDto"));
-
 var _UserAccountResourceDto = _interopRequireDefault(require("./dto/UserAccountResourceDto"));
-
 var _UserType = _interopRequireDefault(require("./dto/UserType"));
-
-var _ValidationErrorInfo = _interopRequireDefault(require("./dto/ValidationErrorInfo"));
-
-var _ValidationErrorItem = _interopRequireDefault(require("./dto/ValidationErrorItem"));
-
+var _ValidationErrorInfoImpl = _interopRequireDefault(require("./dto/ValidationErrorInfoImpl"));
+var _ValidationErrorItemImpl = _interopRequireDefault(require("./dto/ValidationErrorItemImpl"));
 var _AdminApi = _interopRequireDefault(require("./api/AdminApi"));
-
 var _AuthenticateApi = _interopRequireDefault(require("./api/AuthenticateApi"));
-
 var _CommonApi = _interopRequireDefault(require("./api/CommonApi"));
-
 var _MemberApi = _interopRequireDefault(require("./api/MemberApi"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
